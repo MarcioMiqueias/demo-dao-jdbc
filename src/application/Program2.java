@@ -22,7 +22,13 @@ public class Program2 {
 		for (Department dep : list) {
 			System.out.println(dep);
 		}
+		
+		System.out.println("\n-=-=-TEST 3: insert-=-=-");
+		Department newDepartment = new Department(null, "insert test");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted. New id= " + newDepartment.getId());
 
+ 
 	
 	}
 
